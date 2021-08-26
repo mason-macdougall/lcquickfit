@@ -442,7 +442,7 @@ def plot_light_curve(x, y, yerr, soln, gp_pred, mask=None, g=-1, spread=0, ylim=
 
     figs = []
     
-    values = range(len(t0s_true))
+    values = range(len(soln['t0']))
     
     for j in values:
         
