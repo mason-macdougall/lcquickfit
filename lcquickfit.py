@@ -554,9 +554,9 @@ for i in range(num_planets):
     plt.gcf().subplots_adjust(bottom=0.15)
     fig.savefig(dir_path + sys_name + '-raw_lc-variability_mod.png')
 
-plot_light_curve(x, y, yerr, map_soln0, gp_pred, mask=None, g=-1);
+plot_light_curve(x, y, yerr, map_soln0, gp_pred, mask=None, g=-1, durations=durs_true);
 
-plot_light_curve(x, y, yerr, map_soln0, gp_pred, mask=None, g=0, idx='_transit0');
+plot_light_curve(x, y, yerr, map_soln0, gp_pred, mask=None, g=0, idx='_transit0', durations=durs_true);
 
 
 
