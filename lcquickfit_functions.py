@@ -438,7 +438,7 @@ def get_lc(lc_path, host_tic, host_toi):
 
 
 
-def plot_light_curve(x, y, yerr, soln, gp_pred, mask=None, g=-1, spread=0, ylim=[], idx=''):
+def plot_light_curve(x, y, yerr, soln, gp_pred, mask=None, g=-1, spread=0, ylim=[], idx='', durations=[0], identifiers=['',['']], path='~/'):
 
     figs = []
     
@@ -447,7 +447,7 @@ def plot_light_curve(x, y, yerr, soln, gp_pred, mask=None, g=-1, spread=0, ylim=
     for j in values:
         
         if spread == 0:
-            spread = durs_true[j] * 2
+            spread = durations[j] * 2
         
         if mask is None:
             mask = np.ones(len(x), dtype=bool)
@@ -499,11 +499,11 @@ def plot_light_curve(x, y, yerr, soln, gp_pred, mask=None, g=-1, spread=0, ylim=
             ax.set_ylim(np.array(ylim))
 
         if g == -1:
-            name_label = sys_name
+            name_label = identifiers[0]
         else:
-            name_label = pl_names[j]
+            name_label = identifiers[1][j]
 
-        fig.savefig(dir_path + name_label + '-gp_mod' + str(idx) + '-mod.png')
+        fig.savefig(path + name_label + '-gp_mod' + str(idx) + '-mod.png')
         
         if g == -1 or len(values) == 1:
             return fig
