@@ -554,10 +554,9 @@ for i in range(num_planets):
     plt.gcf().subplots_adjust(bottom=0.15)
     fig.savefig(dir_path + sys_name + '-raw_lc-variability_mod.png')
 
-plot_light_curve(x, y, yerr, map_soln0, gp_pred, mask=None, g=-1, durations=durs_true);
+plot_light_curve(x, y, yerr, map_soln0, gp_pred, mask=None, g=-1, durations=durs_true, identifiers=[sys_name, pl_names], path=dir_path);
 
-plot_light_curve(x, y, yerr, map_soln0, gp_pred, mask=None, g=0, idx='_transit0', durations=durs_true);
-
+plot_light_curve(x, y, yerr, map_soln0, gp_pred, mask=None, g=0, idx='_transit0', durations=durs_true, identifiers=[sys_name, pl_names], path=dir_path);
 
 
 mod = (
@@ -764,17 +763,17 @@ print('\n')
 
 if len(pers_true) == 1 and model_mode == 'duration':
     chainz = 2
-    corez = 2
+    corez = 1
     tunez = 10000
     drawz = 5000
 elif len(pers_true) != 1 and model_mode == 'duration':
     chainz = 2
-    corez = 2
+    corez = 1
     tunez = 6000
     drawz = 4000
 elif model_mode == 'full':
     chainz = 2
-    corez = 2
+    corez = 1
     tunez = 3000
     drawz = 2000
 
