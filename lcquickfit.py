@@ -1,8 +1,9 @@
+import sys
+
 toi_num, path_name, model_mode = float(sys.argv[1]), str(sys.argv[2]), str(sys.argv[3])
 
 # 1272., '/Users/mason/lcquickfit/', 'duration'
 
-import sys
 import os, fnmatch
 import lightkurve as lk
 import exoplanet as xo
