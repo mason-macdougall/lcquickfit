@@ -60,7 +60,7 @@ def e_w_function(input_list):
 
 
 
-def compile_target_parameters(full_toi_ids, all_data, host_tic, host_toi):
+def compile_target_parameters(full_toi_ids, all_data, host_tic, host_toi, lc_path):
     tess_pl = all_data
 
     pls = []
