@@ -581,7 +581,7 @@ def ecos_esin_interp(rho_weight_df, rho_data_df, path, target, label):
     fig = c.plotter.plot(figsize=[8,8])
 
     # Annotate the plot with the planet's period
-    txt = "TOI " + str(full_toi_ids[j]) + " (" + case + ")"
+    txt = target + " (" + case + ")"
     plt.annotate(
         txt,
         (0, 0),
