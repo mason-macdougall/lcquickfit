@@ -1522,7 +1522,7 @@ for j in range(len(pers_true)):
     plt.ylabel("Residuals of Relative Flux", fontsize=24)
     plt.xticks(fontsize=18)
     plt.yticks(fontsize=18)
-    plt.xlim(-0.1, 0.1);
+    plt.xlim(-1*bound/2.0, bound/2.0);
     plt.tight_layout()
     plt.gcf().subplots_adjust(bottom=0.15)
     fig.savefig(dir_path + pl_names[j] + '-residuals_mod.png')
