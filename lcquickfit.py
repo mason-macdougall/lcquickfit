@@ -1517,7 +1517,6 @@ for j in range(len(pers_true)):
     plt.plot(x_fold[m], resid[m], '.', color='silver')
     plt.plot(-0.11, 0, '.', ms=10, color='silver')
     
-    plt.legend(fontsize=20, loc=4)
     plt.title("Model Residuals for " + candidate_ids[j], fontsize=25, y=1.03)
     plt.xlabel("Time since mid-transit [days]", fontsize=24)
     plt.ylabel("Residuals of Relative Flux", fontsize=24)
