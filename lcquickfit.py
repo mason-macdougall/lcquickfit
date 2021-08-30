@@ -343,7 +343,7 @@ for j in range(len(full_toi_ids)):
 
 if float(true_vals_all[0][-12]) > 0:
     rho_test = float(true_vals_all[0][-12])
-    rho_test_err = float(true_vals_all[0][-12])
+    rho_test_err = float(true_vals_all[0][-11])
 else:
     rho_test = rhosun
     rho_test_err = 0.1
