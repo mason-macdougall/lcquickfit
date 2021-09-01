@@ -107,7 +107,7 @@ toi = str(full_toi_ids[0]).split('.')[0]
 host_toi = str(toi)
 sys_name = 'TOI' + host_toi + '_TIC' + host_tic
 
-pls, pl_ids, pl_names, candidate_ids, true_vals_all = compile_target_parameters(full_toi_ids, all_data, host_toi, host_tic, lc_path)
+pls, pl_ids, pl_names, candidate_ids, true_vals_all = compile_target_parameters(full_toi_ids, all_data, host_tic, host_toi, lc_path)
 
 us, us_err = true_vals_all[0][-4], true_vals_all[0][-3]
 
