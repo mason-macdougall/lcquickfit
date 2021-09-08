@@ -64,10 +64,9 @@ date = datetime.datetime.today().strftime("%d%b%y")
 # Database for all TESS candidates import and relavent paths
 lc_path = path_name #####'/u/scratch/m/macdouga/tess_ecc_test-ecc/'
 xl_path = path_name #####'/u/home/m/macdouga/hmc_scripts/'
-file_name = "lcquickfit_data.xlsx"
-sheet_name = "Sheet1"
+file_name = "lcquickfit_data.csv"
 
-all_data = pd.read_excel(xl_path + file_name, sheet_name=sheet_name)
+all_data = pd.read_csv(xl_path + file_name)
 
 tess_pl = all_data
 
@@ -774,8 +773,8 @@ elif len(pers_true) != 1 and model_mode == 'duration':
 elif model_mode == 'full':
     chainz = 2
     corez = 1
-    tunez = 3000
-    drawz = 2000
+    tunez = 8000
+    drawz = 6000
 
 np.random.seed(286923464)
 with model:
