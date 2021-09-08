@@ -1,4 +1,5 @@
 # lcquickfit: rapid transit fitting with eccentricity constraints
+Note: Currently only works for TOI targets - soon to be generalized
 
 ## Installing dependencies
 - Create new environment and install dependencies with
