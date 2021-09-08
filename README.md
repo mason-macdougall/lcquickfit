@@ -1,9 +1,15 @@
-lcquickfit
+# lcquickfit: rapid transit fitting with eccentricity constraints
 
-Installing dependencies
+## Installing dependencies
+- Create new environment and install dependencies with
+- *\$ conda env create -f environment.yml*
+- *\$ conda activate lcquickfit_env*
 
-Create new environment and install dependencies with
-$ conda env create -f environment.yml
-$ conda activate lcquickfit_env
-
-To run code
+## To run code
+'duration' mode: fit for eccentricity indirectly and more rapidly by sampling in duration and deriving eccentricity constraints post-sampling
+- *\$ python3 lcquickfit.py <TOI number> <output path> 'duration'*
+- Example: *\$ python3 lcquickfit.py 1272 '/Users/mason/lcquickfit/' 'duration'*
+  
+'full' mode: fit for eccentricity directly by sampling in sqrt(e)cos(omega) & sqrt(e)sin(omega)
+- *\$ python3 lcquickfit.py <TOI number> <output path> 'full'*
+- Example: *\$ python3 lcquickfit.py 1272 '/Users/mason/lcquickfit/' 'full'*
