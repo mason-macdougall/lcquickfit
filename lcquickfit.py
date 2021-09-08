@@ -23,7 +23,7 @@ from celerite2.theano import terms, GaussianProcess
 from astropy.io import fits
 import matplotlib
 import matplotlib.pyplot as plt
-from sklearn.neighbors import KernelDensity
+#from sklearn.neighbors import KernelDensity
 from chainconsumer import ChainConsumer
 
 from lcquickfit_functions import *
@@ -1181,7 +1181,7 @@ for j in range(len(pers_true)):
             probg = lambda g: np.interp(g,gp,probgp)
             prob = probg(g2d)
             
-            
+            '''
             rho_post = rho_ratio
 
             rho_d = np.linspace(np.min(rho_post), np.max(rho_post), 1000)
@@ -1223,7 +1223,7 @@ for j in range(len(pers_true)):
 
 
             ecos_esin_interp(interp_df, rho_df, dir_path, pl_names[j], case)
-
+            '''
 
 
             if np.sum(prob) > 0:
