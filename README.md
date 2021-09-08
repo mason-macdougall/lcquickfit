@@ -7,7 +7,7 @@
 
 ## To run code
 'duration' mode: fit for eccentricity indirectly and more rapidly by sampling in duration and deriving eccentricity constraints post-sampling
-- *\$ python3 lcquickfit.py <TOI number> <output path> 'duration'*
+- *\$ python3 lcquickfit.py \<TOI number\> <output path> 'duration'*
 - Example: *\$ python3 lcquickfit.py 1272 '/Users/mason/lcquickfit/' 'duration'* --> Takes ~30 mins to run
   
 'full' mode: fit for eccentricity directly by sampling in sqrt(e)cos(omega) & sqrt(e)sin(omega)
