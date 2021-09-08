@@ -19,7 +19,7 @@ from celerite2.theano import terms, GaussianProcess
 from astropy.io import fits
 import matplotlib
 import matplotlib.pyplot as plt
-from sklearn.neighbors import KernelDensity
+#from sklearn.neighbors import KernelDensity
 from chainconsumer import ChainConsumer
 
 # General Constants
