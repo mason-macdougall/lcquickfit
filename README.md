@@ -2,7 +2,7 @@
 Note: Currently only works for TOI targets - soon to be generalized
 
 ## Installing dependencies
-- Create new environment and install dependencies by running the following in the top level of this repo:
+Create new environment and install dependencies by running the following at the top level of this repo:
 - *\$ conda env create -f environment.yml*
 - *\$ conda activate lcquickfit_env*
 
